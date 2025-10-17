@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>36th MOUNTAIN PTOVINCE CRAFT EXPOSITION</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font for better readability */
+            margin: 0;
+            padding: 0;
+            background-color: #e9f0f7; /* Light blue background for a professional feel */
+            color: #333;
+        }
+        
+        /* Header Section */
+        header {
+            background-color: #007bff; /* Primary color for header */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        
+        /* Form Container */
+        .form-container {
+            max-width: 800px; /* Slightly wider for better usability */
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 12px; /* Rounded corners for a modern look */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+            animation: fadeIn 0.5s ease-in; /* Simple animation */
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        /* Form Elements */
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: 600;
+            color: #0056b3; /* Darker blue for labels */
+        }
+        
+        input, textarea, select, input[type="file"] {
+            width: 100%;
+            padding: 12px;
+            margin-top: 8px;
+            border: 1px solid #ced4da; /* Light border */
+            border-radius: 6px;
+            font-size: 16px;
+            transition: border-color 0.3s; /* Smooth transition for focus */
+        }
+        
+        input:focus, textarea:focus, select:focus {
+            border-color: #007bff; /* Highlight on focus */
+            outline: none;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.25); /* Glow effect */
+        }
+        
+        textarea {
+            resize: vertical; /* Allow vertical resizing */
+        }
+        
+        button {
+            margin-top: 20px;
+            padding: 12px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        
+        button:hover {
+            background-color: #0056b3; /* Darker shade on hover */
+        }
+        
+        button:active {
+            background-color: #004085; /* Even darker on click */
+        }
+        
+        .error {
+            color: #dc3545; /* Red for errors */
+            font-size: 14px;
+            margin-top: 5px;
+        }
+        
+        /* Section Styling */
+        .form-section {
+            margin-bottom: 25px;
+            border-bottom: 1px solid #e9ecef; /* Light separator */
+            padding-bottom: 15px;
+        }
+        
+        .form-section h3 {
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .form-container {
+                margin: 10px;
+                padding: 20px;
+            }
+            
+            label, input, textarea, select {
+                font-size: 14px;
+            }
+            
+            button {
+                width: 100%; /* Full width on mobile */
+                margin-top: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>36th MOUNTAIN PROVINCE CRAFT EXPOSITION</h1> <!-- Enhanced header -->
+    </header>
+    
+    <div class="form-container">
+        <h2>Business Form</h2>
+        <form action="#" method="post" id="registrationForm" enctype="multipart/form-data">
+            <!-- Personal Information Section -->
+            <div class="form-section">
+                <h3>Personal Information</h3>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                
+                <label for="homeAddress">Home Address:</label>
+                <input type="text" id="homeAddress" name="homeAddress" placeholder="Enter your home address" required>
+            </div>
+            
+            <!-- Business Information Section -->
+            <div class="form-section">
+                <h3>Business Information</h3>
+                <label for="businessName">Business Name Registration:</label>
+                <input type="text" id="businessName" name="businessName" placeholder="Enter your business name for registration" required>
+                
+                <label for="businessAddress">Business Address:</label>
+                <input type="text" id="businessAddress" name="businessAddress" placeholder="Enter your business address" required>
+                
+                <label for="contactNumber">Contact Number:</label>
+                <input type="tel" id="contactNumber" name="contactNumber" placeholder="Enter your contact number (e.g., +1234567890)" required pattern="^\+?[0-9]{7,15}$" title="Please enter a valid phone number (e.g., +1234567890)">
+                <div id="contactNumberError" class="error"></div>
+                
+                <label for="messengerAccount">Messenger Account:</label>
+                <input type="text" id="messengerAccount" name="messengerAccount" placeholder="Enter your Messenger username or ID" required>
+                
+                <label for="socialMediaAccount">Social Media Account (e.g., FB Account):</label>
+                <input type="text" id="socialMediaAccount" name="socialMediaAccount" placeholder="Enter your Facebook or other social media account" required>
+                
+                <label for="productsToSell">Products to Sell:</label>
+                <textarea id="productsToSell" name="productsToSell" rows="4" placeholder="List the products you want to sell (one per line)" required minlength="10"></textarea>
+            </div>
+            
+            <!-- Application and Requirements Section -->
+            <div class="form-section">
+                <h3>Application and Requirements</h3>
+                <label for="applicationForm">Application Form:</label>
+                <select id="applicationForm" name="applicationForm" required>
+                    <option value="">Select Application Type</option>
+                    <option value="new_registration">New Registration</option>
+                    <option value="renewal">Renewal</option>
+                    <option value="update_details">Update Details</option>
+                    <option value="other">Other</option>
+                </select>
+                
+                <label>Upload Requirements:</label>
+                <p>Please upload the required documents. All fields are mandatory.</p>
+                
+                <label for="mayorsPermit">Mayor's Permit:</label>
+                <input type="file" id="mayorsPermit" name="mayorsPermit" accept=".pdf,.jpg,.png" required>
+                
+                <label for="businessRegistration">Business Name and Registration (DTI for single ownership, SEC/CDA for organization/coops):</label>
+                <input type="file" id="businessRegistration" name="businessRegistration" accept=".pdf,.jpg,.png" required>
+                
+                <label for="doleRegistration">DOLE Registration:</label>
+                <input type="file" id="doleRegistration" name="doleRegistration" accept=".pdf,.jpg,.png" required>
+                
+                <label for="birRegistration">BIR Registration (Form 2303):</label>
+                <input type="file" id="birRegistration" name="birRegistration" accept=".pdf,.jpg,.png" required>
+            </div>
+            
+            <!-- Submit and Reset Buttons -->
+            <button type="submit">Register</button>
+            <button type="reset">Reset Form</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('registrationForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const contactNumber = document.getElementById('contactNumber').value;
+            const contactNumberError = document.getElementById('contactNumberError');
+            if (!/^\+?[0-9]{7,15}$/.test(contactNumber)) {
+                contactNumberError.textContent = 'Please enter a valid phone number.';
+                return;
+            } else {
+                contactNumberError.textContent = '';
+            }
+            
+            alert('Form submitted! Data and files would be sent to the server in a real application.');
+        });
+    </script>
+</body>
+</html>
