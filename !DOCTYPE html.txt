@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>36th MOUNTAIN PROVINCE CRAFT EXPOSITION</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
+        header { background-color: #2c3e50; color: white; text-align: center; padding: 20px; }
+        nav { background-color: #34495e; padding: 10px; text-align: center; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; }
+        section { max-width: 800px; margin: 20px auto; padding: 20px; background-color: white; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        h1, h2 { color: #2c3e50; }
+        form { display: flex; flex-direction: column; }
+        label { margin-top: 10px; font-weight: bold; }
+        input, textarea { padding: 8px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px; }
+        button { margin-top: 20px; padding: 10px; background-color: #27ae60; color: white; border: none; border-radius: 4px; cursor: pointer; }
+        button:hover { background-color: #229954; }
+        footer { text-align: center; padding: 10px; background-color: #2c3e50; color: white; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>36th MOUNTAIN PROVINCE CRAFT EXPOSITION</h1>
+        <p>36th MOUNTAIN PROVINCE CRAFT EXPOSTION</p>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#application">Application</a>
+        <a href="#terms">Terms & Conditions</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="home">
+        <h2>Welcome</h2>
+        <p>The 36th Mountain Province Craft Exposition is an annual event celebrating the unique crafts and artisans of the region. Apply now to participate and display your products!</p>
+        <p>Event Details: Diko pa alam kelan</p>
+    </section>
+
+    <section id="application">
+        <h2>Application Form</h2>
+        <p>Please fill out the form below to apply for participation.</p>
+        <form action="/submit-application" method="post" enctype="multipart/form-data">
+            <label for="name">NAME</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="home_address">HOME ADDRESS</label>
+            <input type="text" id="home_address" name="home_address" required>
+
+            <label for="business_name">BUSINESS NAME REGISTRATION</label>
+            <input type="text" id="business_name" name="business_name" required>
+
+            <label for="business_address">BUSINESS ADDRESS</label>
+            <input type="text" id="business_address" name="business_address" required>
+
+            <label for="contact_number">CONTACT NUMBER</label>
+            <input type="tel" id="contact_number" name="contact_number" required>
+
+            <label for="messenger_account">MESSENGER ACCOUNT</label>
+            <input type="text" id="messenger_account" name="messenger_account">
+
+            <label for="social_media">SOCIAL MEDIA ACCOUNT/FB ACCOUNT</label>
+            <input type="text" id="social_media" name="social_media">
+
+            <label for="products">PRODUCTS TO SELL</label>
+            <textarea id="products" name="products" rows="4" required></textarea>
+
+            <h3>APPLICATION FORM</h3>
+            <p>[I will insert the application for here]</p>
+            <!-- Placeholder for actual application content -->
+
+            <h3>UPLOADING OF REQUIREMENTS</h3>
+            <p>Please upload the following documents:</p>
+            <label for="mayors_permit">MAYORS PERMIT</label>
+            <input type="file" id="mayors_permit" name="mayors_permit" accept=".pdf,.jpg,.png" required>
+
+            <label for="business_registration">BUSINESS NAME REGISTRATION (DTI for single ownership)</label>
+            <input type="file" id="business_registration" name="business_registration" accept=".pdf,.jpg,.png" required>
+
+            <label for="sec_cda">SEC/CDA (for organization / Coops)</label>
+            <input type="file" id="sec_cda" name="sec_cda" accept=".pdf,.jpg,.png">
+
+            <label for="dole_registration">DOLE REGISTRATION</label>
+            <input type="file" id="dole_registration" name="dole_registration" accept=".pdf,.jpg,.png" required>
+
+            <label for="bir_registration">BIR REGISTRATION (form 2303)</label>
+            <input type="file" id="bir_registration" name="bir_registration" accept=".pdf,.jpg,.png" required>
+
+            <label for="or_copy">PICTURE OR SCANNED COPY OF OR</label>
+            <input type="file" id="or_copy" name="or_copy" accept=".pdf,.jpg,.png" required>
+
+            <label for="product_pictures">PICTURES OF PRODUCT TO BE DISPLAYED</label>
+            <input type="file" id="product_pictures" name="product_pictures" accept=".jpg,.png" multiple required>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </section>
+
+    <section id="terms">
+        <h2>Terms and Conditions for Application</h2>
+        <p>[Will upload the terms and conditon]</p>
+        <!-- Placeholder for terms and conditions -->
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>For inquiries, contact us at [email/phone].</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 36th Mountain Province Craft Exposition. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+
+
+I will apload the application form
